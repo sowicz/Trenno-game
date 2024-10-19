@@ -1,6 +1,6 @@
 import GameBoard from './GameBoard/GameBoard';
 import { useEffect, useState, useRef } from 'react';
-
+import { useNavigate } from 'react-router-dom';
 
 
 export default function WebsocketConnection({nickname}) {
@@ -9,12 +9,18 @@ export default function WebsocketConnection({nickname}) {
   const [initialTimeleft, setInitialTimeleft] = useState(0);
   const [usersOnline, setUsersOnline] = useState(0);
   const [leaderboard, setLeaderBoard] = useState([])
+  const navigate = useNavigate();
 
 
   const socketRef = useRef(null); // Use a ref to maintain socket instance
 
 
-  nickname = 'Drzewo'
+  if (!nickname) {
+    navigate('/');
+  }
+
+
+  // nickname = 'Drzewo'
 
   // send summary when time ends
   const sendSummary = (points) => {

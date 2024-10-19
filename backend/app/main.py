@@ -78,8 +78,9 @@ async def websocket_endpoint(websocket: WebSocket, client_name: str):
     if current_phase == 'game':
     #Losowe slowa z pelnej listy
         words = get_words.Crossword("words.json")
-        random_hints = words.choose_random_hints()
-        await websocket.send_json(random_hints)
+        random_words = words.choose_random_words()
+        # print(random_words)
+        await websocket.send_json(random_words)
         # await websocket.send_json({"online":len(manager.active_connections)})
 
     current_phase, time_remaining = game_date.get_time_until_next_phase()
@@ -100,9 +101,10 @@ async def websocket_endpoint(websocket: WebSocket, client_name: str):
                 if current_phase == 'game':
                     await websocket.send_json({"phase": 'new_game', "time_left": time_remaining})
                 #Losowe slowa z pelnej listy
+                    # words = get_words.Crossword("words.json")
                     words = get_words.Crossword("words.json")
-                    random_hints = words.choose_random_hints()
-                    await websocket.send_json(random_hints)
+                    random_words = words.choose_random_words()
+                    await websocket.send_json(random_words)
                 else:
                     print('-------'+data+'---------')
                     random_hints = []

@@ -1,37 +1,105 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import GameNavbar from "./GameNavbar"; // Import the new GameNavbar component
 import WritingTable from "../WritingTable/WritingTable";
 import Word from "./Word";
 import Hint from "./Hint";
+import Leaderboard from "./Leaderboard";
 
-export default function GameBoard({wordsAndHints}) {
+export default function GameBoard({wordsAndHints, initialTimeleft, usersOnline, sendSummary, sendFinishWords, leaderboard, nickname}) {
   
-  // const wordsAndHints = [
-  //   { word: "sprawiedliwość", hint: "Justice or fairness" },
-  //   { word: "przyjaźń", hint: "Friendship Friendship Friendship Friendship" },
-  //   { word: "miłość", hint: "Love or affection" },
-  //   { word: "szczęście", hint: "Happiness or luck" },
-  //   { word: "odwaga", hint: "Courage or bravery" },
-  //   { word: "prawda", hint: "Truth or honesty" },
-  //   { word: "wolność", hint: "Freedom or liberty" },
-  //   { word: "piękno", hint: "Beauty or aesthetic" }
-  // ];
+  // const wordsAndHints = ["nomenklatura", "sofizmat", "kognitywizm", "ontologia", "katastrofizm"]
 
-  // const [wordsAndHints, setWordsAndHints] = useState([])
+
   const [activeButtonIndex, setActiveButtonIndex] = useState(null);
-  const [buttonStates, setButtonStates] = useState(
-    wordsAndHints.map(({ word, hint }) => ({
-      word,
-      hint,
-      currentString: '',
-      selectedLetters: {},
-      history: [],
-      isComplete: false,
-      isIncorrect: false
-    }))
-  );
+  const [buttonStates, setButtonStates] = useState([]);
+  const [timeleft, setTimeleft] = useState(initialTimeleft);
+  const [gameFinished, setGameFinished] = useState(false); // Track if all words were guessed before time
+
+
+  useEffect(() => {
+    if (wordsAndHints.length > 0) {
+      setButtonStates(
+        wordsAndHints.map(({ word, hint }) => ({
+          word,
+          currentString: '',
+          selectedLetters: {},
+          history: [],
+          isComplete: false,
+          isIncorrect: false
+        }))
+      );
+    }
+  }, [wordsAndHints]);
+
+
+  useEffect(() => {
+    if (initialTimeleft > 0) {
+      setTimeleft(initialTimeleft);
+    }
+  }, [initialTimeleft]);
+
+
+
+  useEffect(() => {
+    if (timeleft > 0) {
+      const timerId = setTimeout(() => {
+        setTimeleft((prevTime) => prevTime - 1);
+      }, 1000);
+      return () => clearTimeout(timerId);
+    } else if (timeleft == 0 ) {
+      handleSendSummary(); // Send summary when time runs out
+      setGameFinished(false)
+    }
+    
+  }, [timeleft]);
+
+  
+  // Check every wordstate change if correct, when all correct send score to server
+  useEffect(() => {
+    const allWordsGuessed = buttonStates.length > 0 && buttonStates.every(state => state.isComplete);
+    if (allWordsGuessed && !gameFinished) {
+      console.log('All words are guessed! Congrats')
+      send();
+      setGameFinished(true)
+    }
+
+  }, [buttonStates]);
+
+
+  // Function to calculate points and send the summary
+  const handleSendSummary = () => {
+    const pointsPerWord = 10; // Each word is worth 10 points
+    let totalPoints = 0; // Initialize total points
+
+    // Iterate over buttonStates to calculate the total points
+    buttonStates.forEach((state) => {
+        if (state.isComplete) {
+            totalPoints += pointsPerWord; // Add 10 points for each completed word
+        }
+    });
+    // Send the total points to the server
+    sendSummary(totalPoints);
+  };
+
+  const send = () => {
+    const pointsPerWord = 10; // Each word is worth 10 points
+    let totalPoints = 0; // Initialize total points
+
+    // Iterate over buttonStates to calculate the total points
+    buttonStates.forEach((state) => {
+        if (state.isComplete) {
+            totalPoints += pointsPerWord; // Add 10 points for each completed word
+        }
+    });
+    // Add 1 point for each remaining second of timeleft
+    totalPoints += timeleft;
+    // Send the total points to the server
+    sendFinishWords(totalPoints);
+  };
+
 
   const updateButtonState = (index, newString, selectedLetters) => {
+
     setButtonStates((prevStates) => {
       const newStates = [...prevStates];
       const { word, currentString } = newStates[index];
@@ -125,51 +193,58 @@ export default function GameBoard({wordsAndHints}) {
     });
   };
 
+
+
+
   return (
     <div className="flex flex-col items-center max-h-screen">
-      {/* Navbar */}
-      <GameNavbar />
+      <GameNavbar timeleft={timeleft} usersOnline={usersOnline} />
 
-      {/* Main Game Content */}
       <div className="flex flex-col justify-between items-center max-h-screen p-4">
-        <div className="flex space-x-2 mb-4">
-          {wordsAndHints.map((_, index) => (
-            <button
-              key={index}
-              className={`w-8 h-8 text-white rounded-full flex items-center justify-center transition-colors duration-500 ease-in-out ${
-                buttonStates[index]?.isComplete
-                  ? 'bg-green-500'
-                  : 'bg-gray-800'
-              }`}
-              onClick={() => handleButtonClick(index)}
-            >
-              {index + 1}
-            </button>
-          ))}
-        </div>
-
-        {activeButtonIndex !== null && (
+        {gameFinished ? <Leaderboard scores={leaderboard} nickname={nickname}/> : wordsAndHints.length === 0 ? (
+          // <div className="text-gray-500">Brak dostępnych haseł do odgadnięcia</div>
+          <Leaderboard scores={leaderboard} nickname={nickname}/>
+        ) : (
           <>
-            <Hint hint={buttonStates[activeButtonIndex].hint} />
-            <Word 
-              word={buttonStates[activeButtonIndex].word}
-              currentString={buttonStates[activeButtonIndex].currentString}
-              onWordClick={() => {}} 
-            />
-            {buttonStates[activeButtonIndex].isComplete ? (
-              <div className="p-4 bg-green-500 text-white rounded-xl animate-bounce text-center mt-16">
-                Hasło odgadnięte!
-              </div>
-            ) : (
-              <WritingTable 
-                word={buttonStates[activeButtonIndex].word}
-                selectedLetters={buttonStates[activeButtonIndex].selectedLetters}
-                currentString={buttonStates[activeButtonIndex].currentString}
-                onUpdateCurrentString={(newString) => updateButtonState(activeButtonIndex, newString, buttonStates[activeButtonIndex].selectedLetters)}
-                onLetterClick={(letterIndex) => handleLetterClick(activeButtonIndex, letterIndex)}
-                onReset={() => handleReset(activeButtonIndex)}
-                onUndo={handleUndo}
-              />
+            <div className="flex justify-center space-x-2 mb-4 flex-wrap w-80">
+              {wordsAndHints.map((_, index) => (
+                <button
+                  key={index}
+                  className={`w-8 h-8 my-1 text-white rounded-full flex items-center justify-center transition-colors duration-500 ease-in-out ${
+                    buttonStates[index]?.isComplete ? 'bg-green-500' : 'bg-gray-800'
+                  }`}
+                  onClick={() => handleButtonClick(index)}
+                >
+                  {index + 1}
+                </button>
+              ))}
+            </div>
+
+            {activeButtonIndex !== null && (
+              <>
+                {/* <Hint hint={buttonStates[activeButtonIndex]?.hint} /> */}
+
+                <Word 
+                  word={buttonStates[activeButtonIndex]?.word}
+                  currentString={buttonStates[activeButtonIndex]?.currentString}
+                  onWordClick={() => {}}
+                />
+                {buttonStates[activeButtonIndex]?.isComplete ? (
+                  <div className="p-4 bg-green-500 text-white rounded-xl animate-bounce text-center mt-16">
+                    Hasło odgadnięte!
+                  </div>
+                ) : (
+                  <WritingTable 
+                    word={buttonStates[activeButtonIndex]?.word}
+                    selectedLetters={buttonStates[activeButtonIndex]?.selectedLetters}
+                    currentString={buttonStates[activeButtonIndex]?.currentString}
+                    onUpdateCurrentString={(newString) => updateButtonState(activeButtonIndex, newString, buttonStates[activeButtonIndex]?.selectedLetters)}
+                    onLetterClick={(letterIndex) => handleLetterClick(activeButtonIndex, letterIndex)}
+                    onReset={() => handleReset(activeButtonIndex)}
+                    onUndo={handleUndo}
+                  />
+                )}
+              </>
             )}
           </>
         )}

@@ -16,9 +16,9 @@ export default function App() {
       <BrowserRouter>
         <Routes>
             <Route path='/' element={<Mainpage />} />
-            <Route path='/login' element={<Login />} />
+            {/* <Route path='/login' element={<Login />} /> */}
             {/* <Route path='/register' element={<Register />} /> */}
-            <Route path='/dashboard' element={<Dahsboard />} />
+            {/* <Route path='/dashboard' element={<Dahsboard />} /> */}
             <Route path='/game' element={<Game />} />
         </Routes>
       </BrowserRouter>

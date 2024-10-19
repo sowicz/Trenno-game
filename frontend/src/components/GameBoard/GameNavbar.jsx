@@ -36,7 +36,7 @@ export default function GameNavbar({timeleft, usersOnline}) {
     <nav className="p-4 w-full sm:w-80 shadow-md sm:rounded-lg">
       <ul className="flex justify-between items-center text-slate-700 text-sm">
         <li className="">
-          <a href="#">Wyjście</a>
+          <a href="/">Wyjście</a>
         </li>
         <li className="">Czas: {convertTime(timeleft)}</li>
         <li className="flex">

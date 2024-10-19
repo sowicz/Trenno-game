@@ -1,68 +1,110 @@
 {
   "words": [
-    {
-      "word": "ab",
-      "hints": [
-        "Domowe zwierzę, które miauczy",
-        "Czworonóg, który lubi łapać myszy",
-        "Zwierzę z wąsami i pazurami"
-      ]
-    },
-    {
-      "word": "ba",
-      "hints": [
-        "Domowe zwierzę, które miauczy",
-        "Czworonóg, który lubi łapać myszy",
-        "Zwierzę z wąsami i pazurami"
-      ]
-    },
-    {
-      "word": "ce",
-      "hints": [
-        "Domowe zwierzę, które miauczy",
-        "Czworonóg, który lubi łapać myszy",
-        "Zwierzę z wąsami i pazurami"
-      ]
-    },
-    {
-      "word": "dy",
-      "hints": [
-        "Domowe zwierzę, które miauczy",
-        "Czworonóg, który lubi łapać myszy",
-        "Zwierzę z wąsami i pazurami"
-      ]
-    },
-    {
-      "word": "a-4",
-      "hints": [
-        "Domowe zwierzę, które miauczy",
-        "Czworonóg, który lubi łapać myszy",
-        "Zwierzę z wąsami i pazurami"
-      ]
-    },
-    {
-      "word": "a-5",
-      "hints": [
-        "Domowe zwierzę, które miauczy",
-        "Czworonóg, który lubi łapać myszy",
-        "Zwierzę z wąsami i pazurami"
-      ]
-    },
-    {
-      "word": "a-6",
-      "hints": [
-        "Domowe zwierzę, które miauczy",
-        "Czworonóg, który lubi łapać myszy",
-        "Zwierzę z wąsami i pazurami"
-      ]
-    },
-    {
-      "word": "a-7",
-      "hints": [
-        "Domowe zwierzę, które miauczy",
-        "Czworonóg, który lubi łapać myszy",
-        "Zwierzę z wąsami i pazurami"
-      ]
-    }
+    { "word": "anachroniczny" },
+    { "word": "paradygmat" },
+    { "word": "permutacja" },
+    { "word": "inkwizycja" },
+    { "word": "diakrytyczny" },
+    { "word": "nomenklatura" },
+    { "word": "hipoteza" },
+    { "word": "antagonizm" },
+    { "word": "transcendentalny" },
+    { "word": "ekskluzywność" },
+    { "word": "asymilacja" },
+    { "word": "dyskurs" },
+    { "word": "hipersfera" },
+    { "word": "kwantyfikacja" },
+    { "word": "metamorfoza" },
+    { "word": "ewokacja" },
+    { "word": "fraktal" },
+    { "word": "syllogizm" },
+    { "word": "paroksyzm" },
+    { "word": "protuberancja" },
+    { "word": "polimorfizm" },
+    { "word": "ekstrapolacja" },
+    { "word": "polichromia" },
+    { "word": "makiawelizm" },
+    { "word": "substancjalny" },
+    { "word": "ideosynkrazja" },
+    { "word": "emfatyczny" },
+    { "word": "synkretyzm" },
+    { "word": "inkrementalny" },
+    { "word": "mimikra" },
+    { "word": "ambiwalentny" },
+    { "word": "ekspansjonizm" },
+    { "word": "transliteracja" },
+    { "word": "synekdocha" },
+    { "word": "heterogeniczny" },
+    { "word": "antropocentryzm" },
+    { "word": "konceptualizacja" },
+    { "word": "ontologia" },
+    { "word": "dialektyka" },
+    { "word": "fenomenologia" },
+    { "word": "paradoks" },
+    { "word": "relatywizm" },
+    { "word": "metafizyka" },
+    { "word": "eschatologia" },
+    { "word": "archetyp" },
+    { "word": "antropomorfizm" },
+    { "word": "hipostaza" },
+    { "word": "subiektywizm" },
+    { "word": "ekspresjonizm" },
+    { "word": "dyskursywny" },
+    { "word": "pragmatyzm" },
+    { "word": "ideologia" },
+    { "word": "zastępczość" },
+    { "word": "dekonstrukcja" },
+    { "word": "egzystencjalizm" },
+    { "word": "konstytutywny" },
+    { "word": "redundancja" },
+    { "word": "konflagracja" },
+    { "word": "ekwiwalentność" },
+    { "word": "paradygmatyczny" },
+    { "word": "metonimia" },
+    { "word": "paradoksalny" },
+    { "word": "subwersja" },
+    { "word": "eufemizm" },
+    { "word": "antyteza" },
+    { "word": "symbioza" },
+    { "word": "dyskursywność" },
+    { "word": "eksploracja" },
+    { "word": "genotyp" },
+    { "word": "interpolacja" },
+    { "word": "neofita" },
+    { "word": "recypacja" },
+    { "word": "superpozycja" },
+    { "word": "teleologia" },
+    { "word": "spekulatywny" },
+    { "word": "ikonoklazm" },
+    { "word": "synestezja" },
+    { "word": "kognitywizm" },
+    { "word": "reifikacja" },
+    { "word": "mimikryczny" },
+    { "word": "determinizm" },
+    { "word": "prokrastynacja" },
+    { "word": "hierarchizacja" },
+    { "word": "atrofia" },
+    { "word": "biodegradacja" },
+    { "word": "symetryczny" },
+    { "word": "indukcja" },
+    { "word": "desygnacja" },
+    { "word": "homonim" },
+    { "word": "postulatywny" },
+    { "word": "katastrofizm" },
+    { "word": "palimpsest" },
+    { "word": "filantropia" },
+    { "word": "epistemologia" },
+    { "word": "hegemonia" },
+    { "word": "spójność" },
+    { "word": "proliferacja" },
+    { "word": "kondensacja" },
+    { "word": "neologizm" },
+    { "word": "koneksjonizm" },
+    { "word": "ideograficzny" },
+    { "word": "heglizm" },
+    { "word": "semantyka" },
+    { "word": "sofizmat" },
+    { "word": "sylogizm" },
+    { "word": "pseudonim" }
   ]
 }

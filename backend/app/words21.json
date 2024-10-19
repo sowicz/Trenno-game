@@ -1,236 +1,380 @@
 {
   "words": [
     {
-      "word": "kot",
+      "word": "kryształ",
       "hints": [
-        "Domowe zwierzę, które miauczy",
-        "Czworonóg, który lubi łapać myszy",
-        "Zwierzę z wąsami i pazurami"
+        "Naturalna forma materii o regularnej strukturze",
+        "Cenny minerał, często wykorzystywany w biżuterii",
+        "Obiekt często związany z magią i ezoteryką"
       ]
     },
     {
-      "word": "pies",
+      "word": "szmaragd",
       "hints": [
-        "Najlepszy przyjaciel człowieka",
-        "Czworonóg, który szczeka",
-        "Zwierzę, które lubi aportować"
+        "Zielony kamień szlachetny",
+        "Symbol nadziei i odrodzenia",
+        "Jedna z najdroższych odmian berylu"
       ]
     },
     {
-      "word": "drzewo",
+      "word": "fenomen",
       "hints": [
-        "Rośnie w lesie, ma korzenie i liście",
-        "Zielony przyjaciel człowieka",
-        "Naturalna część krajobrazu, która daje cień"
+        "Wyjątkowe zjawisko lub fakt",
+        "Może być przedmiotem badań naukowych",
+        "Czasami określane jako niezwykłość"
       ]
     },
     {
-      "word": "auto",
+      "word": "krucyfiks",
       "hints": [
-        "Pojazd z czterema kołami",
-        "Środek transportu z silnikiem",
-        "Używany do podróży po drodze"
+        "Symbol chrześcijaństwa",
+        "Przedmiot przedstawiający ukrzyżowanego Jezusa",
+        "Często spotykany w kościołach"
       ]
     },
     {
-      "word": "komputer",
+      "word": "tropikalny",
       "hints": [
-        "Urządzenie do przetwarzania informacji",
-        "Maszyna z klawiaturą i monitorem",
-        "Narzędzie pracy programisty"
+        "Rodzaj klimatu z wysokimi temperaturami",
+        "Charakterystyczny dla obszarów blisko równika",
+        "Często związany z bujną roślinnością"
       ]
     },
     {
-      "word": "las",
+      "word": "eksperyment",
       "hints": [
-        "Duży obszar z drzewami",
-        "Miejsce, gdzie rosną drzewa",
-        "Przestrzeń pełna roślinności"
+        "Przeprowadzenie badań w kontrolowanych warunkach",
+        "Sposób na odkrywanie nowych faktów",
+        "Często stosowany w naukach ścisłych"
       ]
     },
     {
-      "word": "lis",
+      "word": "kontrabas",
       "hints": [
-        "Zwierzę o rudym futrze",
-        "Sprytny drapieżnik",
-        "Mieszka w lesie i ma długi ogon"
+        "Instrument smyczkowy z najniższym dźwiękiem",
+        "Często występuje w orkiestrze",
+        "Jego struny są grubsze niż w przypadku innych instrumentów smyczkowych"
       ]
     },
     {
-      "word": "stół",
+      "word": "symfonia",
       "hints": [
-        "Mebel do jedzenia",
-        "Używany podczas posiłków",
-        "Ma nogi i blat"
+        "Forma muzyczna dla orkiestry",
+        "Zwykle składa się z kilku części",
+        "Często kojarzona z wielkimi kompozytorami"
       ]
     },
     {
-      "word": "koń",
+      "word": "witalność",
       "hints": [
-        "Zwierzę hodowlane",
-        "Służy do jazdy",
-        "Mocne i szybkie zwierzę"
+        "Siła życiowa lub energia",
+        "Może odnosić się do zdrowia",
+        "Często używane w kontekście zdrowego stylu życia"
       ]
     },
     {
-      "word": "słoń",
+      "word": "abstrakcjonizm",
       "hints": [
-        "Największe lądowe zwierzę",
-        "Zwierzę z trąbą",
-        "Żyje na sawannie"
+        "Styl artystyczny, który odrzuca rzeczywistość",
+        "Charakterystyczny dla malarstwa XX wieku",
+        "Zwykle posługuje się formami i kolorami"
       ]
     },
     {
-      "word": "samolot",
+      "word": "halucynacja",
       "hints": [
-        "Środek transportu powietrznego",
-        "Ma skrzydła i lata",
-        "Szybki środek podróży"
+        "Fałszywe spostrzeżenie zmysłowe",
+        "Może być wynikiem zmęczenia lub substancji psychoaktywnych",
+        "Często mylona z rzeczywistością"
       ]
     },
     {
-      "word": "kwiatki",
+      "word": "relikwiarz",
       "hints": [
-        "Rośliny ozdobne",
-        "Często dawane jako prezent",
-        "Rośliny o pięknych kolorach"
+        "Przechowuje relikwie świętych",
+        "Często zdobiony i ozdobny",
+        "Spotykany w kościołach i muzeach"
       ]
     },
     {
-      "word": "rakieta",
+      "word": "metafora",
       "hints": [
-        "Środek transportu kosmicznego",
-        "Używana do lotów w kosmos",
-        "Startuje z wyrzutni"
+        "Przenośnia w literaturze",
+        "Porównanie bez użycia słowa 'jak'",
+        "Często używana do wyrażania złożonych idei"
       ]
     },
     {
-      "word": "komputer",
+      "word": "transcendencja",
       "hints": [
-        "Urządzenie do pracy i rozrywki",
-        "Maszyna do przetwarzania informacji",
-        "Posiada ekran i klawiaturę"
+        "Przekraczanie granic",
+        "Może odnosić się do duchowości",
+        "Często pojawia się w filozofii"
       ]
     },
     {
-      "word": "biblioteka",
+      "word": "ekspresjonizm",
       "hints": [
-        "Miejsce pełne książek",
-        "Lokal do czytania i nauki",
-        "Wypożyczalnia książek"
+        "Ruch artystyczny, który wyraża emocje",
+        "Często stosuje zniekształcenia i intensywne kolory",
+        "Odpowiedź na realizm w sztuce"
       ]
     },
-    {
-      "word": "telefoniczny",
-      "hints": [
-        "Związany z telefonami",
-        "Dotyczy rozmów przez urządzenie",
-        "Powiązany z komunikacją na odległość"
-      ]
+        {
+        "word": "abstrakcja",
+        "hints": [
+            "Zjawisko oddzielania pojęcia od rzeczywistości",
+            "Termin często używany w sztuce",
+            "Styl artystyczny odrzucający realizm"
+        ]
     },
     {
-      "word": "przedsiębiorca",
-      "hints": [
-        "Osoba prowadząca firmę",
-        "Zajmuje się biznesem",
-        "Tworzy własne przedsiębiorstwo"
-      ]
+        "word": "ekspansja",
+        "hints": [
+            "Rozszerzanie się czegoś",
+            "Może dotyczyć obszarów geograficznych",
+            "Często związana z procesami gospodarczymi"
+        ]
     },
     {
-      "word": "samochodowy",
-      "hints": [
-        "Związany z pojazdami",
-        "Dotyczy motoryzacji",
-        "Części lub produkty dla aut"
-      ]
+        "word": "fenomen",
+        "hints": [
+            "Wyjątkowe zjawisko",
+            "Może być przedmiotem badań naukowych",
+            "Czasami uznawany za niezwykłość"
+        ]
     },
     {
-      "word": "międzynarodowy",
-      "hints": [
-        "Związany z wieloma krajami",
-        "Dotyczy współpracy globalnej",
-        "Poza granicami jednego państwa"
-      ]
+        "word": "konsekwencja",
+        "hints": [
+            "Logiczne następstwo",
+            "Może dotyczyć działania i jego skutków",
+            "Często używane w kontekście filozoficznym"
+        ]
     },
     {
-      "word": "czarny kot",
-      "hints": [
-        "Kot o czarnej sierści",
-        "Popularne w przesądach",
-        "Zwierzę, które symbolizuje pecha"
-      ]
+        "word": "symfonia",
+        "hints": [
+            "Dzieło muzyczne dla orkiestry",
+            "Zwykle składa się z kilku części",
+            "Często kojarzona z klasycznymi kompozytorami"
+        ]
     },
     {
-      "word": "biały miś",
-      "hints": [
-        "Niedźwiedź z Arktyki",
-        "Zwierzę, które żyje na lodowcach",
-        "Przytulanka często spotykana na półkach"
-      ]
+        "word": "wizjonerstwo",
+        "hints": [
+            "Umiejętność przewidywania przyszłości",
+            "Często związane z twórczością artystyczną",
+            "Może dotyczyć innowacyjnych pomysłów"
+        ]
     },
     {
-      "word": "złota rybka",
-      "hints": [
-        "Ryba spełniająca życzenia",
-        "Zwierzę domowe trzymane w akwarium",
-        "Sympatyczny mieszkaniec wody"
-      ]
+        "word": "witalność",
+        "hints": [
+            "Siła życiowa lub energia",
+            "Może odnosić się do zdrowia",
+            "Często używane w kontekście aktywnego stylu życia"
+        ]
     },
     {
-      "word": "lampa uliczna",
-      "hints": [
-        "Oświetla drogi nocą",
-        "Stoi przy chodniku",
-        "Latarnia, którą spotykasz na ulicy"
-      ]
+        "word": "narracja",
+        "hints": [
+            "Sposób opowiadania historii",
+            "Może mieć różne style i formy",
+            "Często używane w literaturze i filmie"
+        ]
     },
     {
-      "word": "czerwony dywan",
-      "hints": [
-        "Rozkładany na ważnych wydarzeniach",
-        "Symbol luksusu i prestiżu",
-        "Często używany na galach filmowych"
-      ]
+        "word": "metafora",
+        "hints": [
+            "Przenośnia w literaturze",
+            "Porównanie bez użycia słowa 'jak'",
+            "Często używana do wyrażania złożonych idei"
+        ]
     },
     {
-      "word": "żółty ser",
-      "hints": [
-        "Ser o dziurach",
-        "Produkt spożywczy używany na kanapkach",
-        "Szczególnie smaczny w towarzystwie wina"
-      ]
+        "word": "halucynacja",
+        "hints": [
+            "Fałszywe spostrzeżenie zmysłowe",
+            "Może być wynikiem zmęczenia lub substancji psychoaktywnych",
+            "Często mylona z rzeczywistością"
+        ]
     },
     {
-      "word": "zielony groszek",
-      "hints": [
-        "Małe, kuliste warzywo",
-        "Często dodawany do sałatek",
-        "Warzywo o jasnozielonym kolorze"
-      ]
+        "word": "krucyfiks",
+        "hints": [
+            "Symbol chrześcijaństwa",
+            "Przedmiot przedstawiający ukrzyżowanego Jezusa",
+            "Często spotykany w kościołach"
+        ]
     },
     {
-      "word": "góra lodowa",
-      "hints": [
-        "Olbrzymia masa lodu na morzu",
-        "Część ukryta pod wodą",
-        "Stanowiła przyczynę zatonięcia Titanica"
-      ]
+        "word": "ekspresjonizm",
+        "hints": [
+            "Ruch artystyczny wyrażający emocje",
+            "Często stosuje zniekształcenia i intensywne kolory",
+            "Odpowiedź na realizm w sztuce"
+        ]
     },
     {
-      "word": "szklany sufit",
-      "hints": [
-        "Niewidzialna bariera dla rozwoju kariery",
-        "Metafora ograniczeń zawodowych",
-        "Coś, co jest trudne do przekroczenia"
-      ]
+        "word": "transcendencja",
+        "hints": [
+            "Przekraczanie granic",
+            "Może odnosić się do duchowości",
+            "Często pojawia się w filozofii"
+        ]
     },
     {
-      "word": "czysta woda",
-      "hints": [
-        "Bezbarwny płyn do picia",
-        "Jest niezbędna do życia",
-        "Występuje w naturze, ale bywa filtrowana"
-      ]
+        "word": "paradoks",
+        "hints": [
+            "Wydaje się sprzeczny, ale może być prawdziwy",
+            "Często występuje w filozofii",
+            "Przykład: mniej znaczy więcej"
+        ]
+    },
+    {
+        "word": "intuicja",
+        "hints": [
+            "Przeczucie lub przeczucie",
+            "Może prowadzić do szybkich decyzji",
+            "Często opisuje się jako 'wewnętrzny głos'"
+        ]
+    },
+    {
+        "word": "kalejdoskop",
+        "hints": [
+            "Obiekt tworzący zmieniające się wzory",
+            "Często używany w zabawkach",
+            "Może być metaforą różnorodności"
+        ]
+    },
+    {
+        "word": "neologizm",
+        "hints": [
+            "Nowe słowo lub wyrażenie",
+            "Może być wynikiem zmian w języku",
+            "Często używane w literaturze"
+        ]
+    },
+    {
+        "word": "epidemia",
+        "hints": [
+            "Szybkie rozprzestrzenianie się choroby",
+            "Często dotyczy populacji",
+            "Może mieć poważne skutki zdrowotne"
+        ]
+    },
+    {
+        "word": "kulturoznawstwo",
+        "hints": [
+            "Nauka badająca kulturę",
+            "Analizuje różne aspekty życia społecznego",
+            "Może obejmować różne dziedziny nauki"
+        ]
+    },
+    {
+        "word": "konwergencja",
+        "hints": [
+            "Zbieganie się różnych elementów",
+            "Może dotyczyć technologii i mediów",
+            "Często związana z globalizacją"
+        ]
+    },
+    {
+        "word": "futurologia",
+        "hints": [
+            "Nauka przewidująca przyszłość",
+            "Może dotyczyć różnych dziedzin życia",
+            "Często wiąże się z technologią"
+        ]
+    },
+    {
+        "word": "katastrofa",
+        "hints": [
+            "Wydarzenie o dużych skutkach negatywnych",
+            "Może dotyczyć środowiska lub społeczeństwa",
+            "Często analizowane w kontekście zapobiegania"
+        ]
+    },
+    {
+        "word": "rezonans",
+        "hints": [
+            "Wzmocnienie dźwięku lub sygnału",
+            "Często występuje w akustyce",
+            "Może odnosić się do fal elektromagnetycznych"
+        ]
+    },
+    {
+        "word": "strategia",
+        "hints": [
+            "Plan działania mający na celu osiągnięcie celu",
+            "Często używane w biznesie",
+            "Może dotyczyć także wojskowości"
+        ]
+    },
+    {
+        "word": "symbioza",
+        "hints": [
+            "Współżycie różnych organizmów",
+            "Może być korzystne dla obu stron",
+            "Często występuje w przyrodzie"
+        ]
+    },
+    {
+        "word": "epifania",
+        "hints": [
+            "Objawienie lub odkrycie",
+            "Często związane z doświadczeniem duchowym",
+            "Może dotyczyć różnych dziedzin sztuki"
+        ]
+    },
+    {
+        "word": "określoność",
+        "hints": [
+            "Cechuje coś jako jasne i zrozumiałe",
+            "Przeciwieństwo nieokreśloności",
+            "Może dotyczyć informacji lub danych"
+        ]
+    },
+    {
+        "word": "odwaga",
+        "hints": [
+            "Zdolność do stawienia czoła strachowi",
+            "Często związana z heroicznymi czynami",
+            "Może być cechą charakteru"
+        ]
+    },
+    {
+        "word": "krytyka",
+        "hints": [
+            "Analiza dzieła lub zachowania",
+            "Może być pozytywna lub negatywna",
+            "Często stosowana w sztuce i literaturze"
+        ]
+    },
+    {
+        "word": "ewolucja",
+        "hints": [
+            "Proces stopniowych zmian",
+            "Może dotyczyć organizmów żywych",
+            "Często omawiane w kontekście biologii"
+        ]
+    },
+    {
+        "word": "kontrakt",
+        "hints": [
+            "Umowa pomiędzy dwiema stronami",
+            "Może być pisemna lub ustna",
+            "Często związany z prawem cywilnym"
+        ]
+    },
+    {
+        "word": "odkrycie",
+        "hints": [
+            "Nowe spostrzeżenie lub wynalazek",
+            "Często zmienia bieg historii",
+            "Może dotyczyć różnych dziedzin nauki"
+        ]
     }
   ]
 }
